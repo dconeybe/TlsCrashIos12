@@ -118,6 +118,9 @@ private:
 
   unsigned starting_cpu_ = std::numeric_limits<unsigned>::max();
 
+  // (zzyzx) If the call to Get() below is changed to nullptr then the crash
+  // goes away. Also, if the time_cache_ variable declaration is moved _above_
+  // the exec_ctx_ variable declaration then the crash also goes away.
   static thread_local ExecCtx *exec_ctx_;
   ExecCtx *last_exec_ctx_ = Get();
   ScopedTimeCache time_cache_;
