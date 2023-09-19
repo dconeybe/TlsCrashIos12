@@ -8,25 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EDF069372ABA29B100089302 /* TlsCrashIos12Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF069362ABA29B100089302 /* TlsCrashIos12Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDF069492ABA2A5B00089302 /* fork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF069422ABA2A5B00089302 /* fork.cpp */; };
 		EDF0694A2ABA2A5B00089302 /* exec_ctx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF069432ABA2A5B00089302 /* exec_ctx.cpp */; };
 		EDF0694C2ABA2A5B00089302 /* exec_ctx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EDF069452ABA2A5B00089302 /* exec_ctx.hpp */; };
-		EDF0694D2ABA2A5B00089302 /* fork.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EDF069462ABA2A5B00089302 /* fork.hpp */; };
 		EDF0694E2ABA2A5B00089302 /* my_time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF069472ABA2A5B00089302 /* my_time.cpp */; };
 		EDF0694F2ABA2A5B00089302 /* my_time.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EDF069482ABA2A5B00089302 /* my_time.hpp */; };
-		EDF069522ABA2F3100089302 /* no_destruct.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EDF069512ABA2F3100089302 /* no_destruct.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDF069332ABA29B100089302 /* TlsCrashIos12Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TlsCrashIos12Lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF069362ABA29B100089302 /* TlsCrashIos12Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TlsCrashIos12Lib.h; sourceTree = "<group>"; };
-		EDF069422ABA2A5B00089302 /* fork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fork.cpp; sourceTree = "<group>"; };
 		EDF069432ABA2A5B00089302 /* exec_ctx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exec_ctx.cpp; sourceTree = "<group>"; };
 		EDF069452ABA2A5B00089302 /* exec_ctx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exec_ctx.hpp; sourceTree = "<group>"; };
-		EDF069462ABA2A5B00089302 /* fork.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fork.hpp; sourceTree = "<group>"; };
 		EDF069472ABA2A5B00089302 /* my_time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_time.cpp; sourceTree = "<group>"; };
 		EDF069482ABA2A5B00089302 /* my_time.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = my_time.hpp; sourceTree = "<group>"; };
-		EDF069512ABA2F3100089302 /* no_destruct.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = no_destruct.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +53,8 @@
 		EDF069352ABA29B100089302 /* TlsCrashIos12Lib */ = {
 			isa = PBXGroup;
 			children = (
-				EDF069512ABA2F3100089302 /* no_destruct.hpp */,
 				EDF069432ABA2A5B00089302 /* exec_ctx.cpp */,
 				EDF069452ABA2A5B00089302 /* exec_ctx.hpp */,
-				EDF069422ABA2A5B00089302 /* fork.cpp */,
-				EDF069462ABA2A5B00089302 /* fork.hpp */,
 				EDF069472ABA2A5B00089302 /* my_time.cpp */,
 				EDF069482ABA2A5B00089302 /* my_time.hpp */,
 				EDF069362ABA29B100089302 /* TlsCrashIos12Lib.h */,
@@ -78,11 +69,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF0694D2ABA2A5B00089302 /* fork.hpp in Headers */,
 				EDF0694C2ABA2A5B00089302 /* exec_ctx.hpp in Headers */,
 				EDF069372ABA29B100089302 /* TlsCrashIos12Lib.h in Headers */,
 				EDF0694F2ABA2A5B00089302 /* my_time.hpp in Headers */,
-				EDF069522ABA2F3100089302 /* no_destruct.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF0694A2ABA2A5B00089302 /* exec_ctx.cpp in Sources */,
-				EDF069492ABA2A5B00089302 /* fork.cpp in Sources */,
 				EDF0694E2ABA2A5B00089302 /* my_time.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

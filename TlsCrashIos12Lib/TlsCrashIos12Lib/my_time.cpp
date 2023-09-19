@@ -2,8 +2,6 @@
 
 #include <random>
 
-#include "no_destruct.hpp"
-
 namespace TlsCrashDemo {
 
 namespace {
@@ -17,9 +15,7 @@ public:
 
 }
 
-thread_local Timestamp::Source*
-Timestamp::thread_local_time_source_{
-NoDestructSingleton<GprNowTimeSource>::Get()};
+thread_local Timestamp::Source* Timestamp::thread_local_time_source_ = nullptr;
 
 Timestamp ScopedTimeCache::Now() {
   if (!cached_time_.has_value()) {

@@ -4,7 +4,6 @@
 #include <limits>
 #include <thread>
 
-#include "fork.hpp"
 #include "my_time.hpp"
 
 /* This exec_ctx is ready to return: either pre-populated, or cached as soon as
@@ -38,15 +37,11 @@ public:
   /** Default Constructor */
 
   ExecCtx() : flags_(GRPC_EXEC_CTX_FLAG_IS_FINISHED) {
-    Fork::IncExecCtxCount();
     Set(this);
   }
 
   /** Parameterised Constructor */
   explicit ExecCtx(uintptr_t fl) : flags_(fl) {
-    if (!(GRPC_EXEC_CTX_FLAG_IS_INTERNAL_THREAD & flags_)) {
-      Fork::IncExecCtxCount();
-    }
     Set(this);
   }
 
@@ -55,9 +50,6 @@ public:
     flags_ |= GRPC_EXEC_CTX_FLAG_IS_FINISHED;
     Flush();
     Set(last_exec_ctx_);
-    if (!(GRPC_EXEC_CTX_FLAG_IS_INTERNAL_THREAD & flags_)) {
-      Fork::DecExecCtxCount();
-    }
   }
 
   /** Disallow copy and assignment operators */
