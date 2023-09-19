@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TlsCrashIos12Lib/TlsCrashIos12Lib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TlsCrashIos12App/TlsCrashIos12App.xcodeproj">
+   </FileRef>
+</Workspace>
